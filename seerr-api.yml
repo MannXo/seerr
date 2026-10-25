@@ -6626,6 +6626,12 @@ paths:
                   type: string
                 languageProfileId:
                   type: number
+                tags:
+                  type: array
+                  items:
+                    type: number
+                  nullable: true
+                  description: Sonarr/Radarr tag IDs to apply to the request. Tags from a matching override rule are added to these, unless the user has the `MANAGE_REQUESTS` or `REQUEST_ADVANCED` permission.
                 userId:
                   type: number
                   nullable: true
@@ -6736,6 +6742,12 @@ paths:
                   type: string
                 languageProfileId:
                   type: number
+                tags:
+                  type: array
+                  items:
+                    type: number
+                  nullable: true
+                  description: Sonarr/Radarr tag IDs to apply to the request.
                 userId:
                   type: number
                   nullable: true
